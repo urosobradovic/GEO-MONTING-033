@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | GEO MONTING 033",
   },
   description:
-    "GEO MONTING 033 — geodetska firma iz Prijepolja sa skoro 20 godina iskustva. Deoba i obeležavanje parcela, katastarsko-topografski plan, geodetski elaborat, obnova međa, profili puteva. Pozovite geodetu u Prijepolju.",
+    "GEO MONTING 033 — geodetska firma iz Prijepolja sa više od 20 godina iskustva. Deoba i obeležavanje parcela, katastarsko-topografski plan, geodetski elaborat, obnova međa, profili puteva. Pozovite geodetu u Prijepolju.",
   keywords: [
     "geodeta Prijepolje",
     "geodetske usluge Prijepolje",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "GEO MONTING 033",
     title: "GEO MONTING 033 — Geodeta Prijepolje | Geodetske usluge i katastar",
     description:
-      "Geodetska firma iz Prijepolja sa skoro 20 godina iskustva: obeležavanje parcela, geodetski elaborati, katastarsko-topografski planovi.",
+      "Geodetska firma iz Prijepolja sa više od 20 godina iskustva: obeležavanje parcela, geodetski elaborati, katastarsko-topografski planovi.",
     images: ["/logo-full.png"],
   },
   twitter: {
@@ -58,7 +58,7 @@ const jsonLd = {
   name: "GEO MONTING 033",
   image: `${SITE_URL}/logo-full.png`,
   description:
-    "Geodetska firma iz Prijepolja sa skoro 20 godina iskustva u geodetskim uslugama: deoba parcela, obeležavanje, katastarsko-topografski planovi, geodetski elaborati.",
+    "Geodetska firma iz Prijepolja sa više od 20 godina iskustva u geodetskim uslugama: deoba parcela, obeležavanje, katastarsko-topografski planovi, geodetski elaborati.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Vladimira Perića Valtera 116",

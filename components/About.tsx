@@ -5,7 +5,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-copy">
             <div className="eyebrow">Ko smo mi</div>
-            <h2>Skoro dve decenije rada u struci</h2>
+            <h2>20+ godina rada u struci</h2>
             <p>
               Naša firma posluje više od 20 godina, tokom kojih smo težili da ispunimo visoke kriterijume
               koje smo sami sebi zadali.
