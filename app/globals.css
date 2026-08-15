@@ -136,7 +136,7 @@
   /* ---------- STATS STRIP ---------- */
   .stats{background:var(--black);color:var(--white);padding:34px 0;}
   .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
-  .stat b{font-family:var(--font-display);font-size:2.8rem;display:block;color:var(--white);}
+  .stat b{font-family:var(--font-display);font-size:2rem;display:block;color:var(--white);}
   .stat b span{font-size:inherit;color:var(--red);text-transform:none;letter-spacing:normal;}
   .stat span{font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-500);}
 
