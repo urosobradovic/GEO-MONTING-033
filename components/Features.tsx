@@ -1,18 +1,18 @@
 const features = [
   {
-    img: "C:\GeoMonting033\instrument2.jpg",
+    img: "/instrument2.jpg",
     alt: "Iskustvo na terenu",
     title: "Iskustvo",
     text: "Poslujemo na teritoriji Opštine Prijepolje, a i šire, već više od 20 godina.",
   },
   {
-    img: "C:\GeoMonting033\instrument.jpg",
+    img: "/instrument.jpg",
     alt: "Profesionalnost u radu",
     title: "Profesionalnost",
     text: "Prilikom poslovanja sa nama, svaka reč iz dogovora se ispoštuje — uključujući dogovor u kancelariji kao i izlazak na teren.",
   },
   {
-    img: "C:\GeoMonting033\teren1.jpg",
+    img: "/teren1.jpg",
     alt: "Ekspresnost izvršavanja poslova",
     title: "Ekspresnost",
     text: "Maksimalno brzo izvršavamo dogovoreni posao, želeći da zadovoljimo kriterijume mušterije.",
