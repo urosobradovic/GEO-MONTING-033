@@ -6,7 +6,7 @@ export default function Stats() {
       <div className="wrap">
         <div className="stat">
           <b>
-            <CountUp end={20} suffix="+" start={16} duration={3000} />
+            <CountUp end={20} suffix="+" start={12} duration={2000} />
           </b>
           <span>Godina na terenu</span>
         </div>
@@ -16,7 +16,7 @@ export default function Stats() {
         </div>
         <div className="stat">
           <b>
-            <CountUp end={9} suffix="+" start={4} duration={3000} />
+            <CountUp end={9} suffix="+" start={3} duration={2000} />
           </b>
           <span>Vrsta geodetskih usluga</span>
         </div>
