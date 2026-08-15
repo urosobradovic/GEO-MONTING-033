@@ -14,8 +14,7 @@ export default function Hero() {
           </div>
           <h1>GEO MONTING 033</h1>
           <p className="tagline">
-            <strong>GEO MONTING 033</strong> — geodetska firma za obeležavanje parcela, katastarsko-topografski
-            plan i geodetske elaborate. Više od dve decenije poverenja opštine i privatnih investitora.
+            <strong>GEO MONTING 033</strong> — geodetska firma u Prijepolju sa više od dve decenije poverenja opštine i privatnih investitora.
           </p>
           <div className="btn-row">
             <a href="#kontakt" className="btn btn-primary">
