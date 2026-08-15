@@ -10,11 +10,12 @@ export default function Hero() {
       </div>
       <div className="wrap">
         <div className="hero-inner">
-          <div className="coord">N 43.385480°, E 19.641992° — PRIJEPOLJE, RS</div>
+          <div className="coord">N 43.385453°, E 19.642011° — PRIJEPOLJE, RS
+          </div>
           <h1>GEO MONTING 033</h1>
           <p className="tagline">
-            <strong>Geodeta Prijepolje</strong> — geodetska firma za obeležavanje parcela, katastarsko-topografski
-            plan i geodetske elaborate. Skoro dve decenije poverenja opštine i privatnih investitora.
+            <strong>GEO MONTING 033</strong> — geodetska firma za obeležavanje parcela, katastarsko-topografski
+            plan i geodetske elaborate. Više od dve decenije poverenja opštine i privatnih investitora.
           </p>
           <div className="btn-row">
             <a href="#kontakt" className="btn btn-primary">

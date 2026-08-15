@@ -1,10 +1,12 @@
+import CountUp from "./CountUp";
+
 export default function Stats() {
   return (
     <div className="stats">
       <div className="wrap">
         <div className="stat">
           <b>
-            <span className="accent">20+</span>
+            <CountUp end={20} suffix="+" start={16} />
           </b>
           <span>Godina na terenu</span>
         </div>
@@ -13,7 +15,9 @@ export default function Stats() {
           <span>Opština Prijepolje kao partner</span>
         </div>
         <div className="stat">
-          <b>9+</b>
+          <b>
+            <CountUp end={9} suffix="+" start={5} />
+          </b>
           <span>Vrsta geodetskih usluga</span>
         </div>
         <div className="stat">
