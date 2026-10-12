@@ -6,7 +6,7 @@ const features = [
     text: "Poslujemo na teritoriji Opštine Prijepolje, a i šire, već više od 20 godina.",
   },
   {
-    img: "/profesionalnost.jpg",
+    img: "/profesionalnost-gnss.jpg",
     alt: "Geodeta sa Leica GNSS prijemnikom i kontrolerom tokom merenja",
     title: "Profesionalnost",
     text: "Prilikom poslovanja sa nama, svaka reč iz dogovora se ispoštuje — uključujući dogovor u kancelariji kao i izlazak na teren.",
