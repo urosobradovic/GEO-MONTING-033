@@ -7,7 +7,7 @@ const features = [
   },
   {
     img: "/profesionalnost.jpg",
-    alt: "Rad sa Leica totalnom stanicom na terenu",
+    alt: "Geodeta sa Leica GNSS prijemnikom i kontrolerom tokom merenja",
     title: "Profesionalnost",
     text: "Prilikom poslovanja sa nama, svaka reč iz dogovora se ispoštuje — uključujući dogovor u kancelariji kao i izlazak na teren.",
   },

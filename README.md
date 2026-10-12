@@ -78,7 +78,8 @@ npx wrangler pages deploy out
 
 ## Slike
 
-- `hero.jpg`, `profesionalnost.jpg`, `ekspresnost.jpg`, `og-image.jpg` — fotografije sa starog sajta geomonting033.wordpress.com
+- `hero.jpg`, `ekspresnost.jpg`, `og-image.jpg` — fotografije sa starog sajta geomonting033.wordpress.com
+- `profesionalnost.jpg` — geodeta sa Leica GNSS prijemnikom
 - `o-nama.jpg` — vaša terenska fotografija (Leica TS10)
 - `iskustvo.jpg` — vaša terenska fotografija (Leica, put u magli)
 
