@@ -1,6 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { CONTACT } from "@/lib/site";
+
+const links = [
+  { href: "#pocetna", label: "Početna" },
+  { href: "#onama", label: "O nama" },
+  { href: "#usluge", label: "Usluge" },
+  { href: "#kontakt", label: "Kontakt" },
+];
 
 export default function Header() {
   const [solid, setSolid] = useState(false);
@@ -9,76 +17,87 @@ export default function Header() {
   useEffect(() => {
     const onScroll = () => setSolid(window.scrollY > 40);
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const close = () => setMenuOpen(false);
+
   return (
-    <header id="siteHeader" className={solid ? "solid" : ""}>
-      <div className="wrap">
-        <div className="brand">
-          <span className="mark">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-icon.png" alt="GEO MONTING 033 logo" />
+    <header id="siteHeader" className={[solid ? "solid" : "", menuOpen ? "menu-open" : ""].join(" ").trim()}>
+      <div className="topbar">
+        <div className="wrap">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+            {CONTACT.address}, Prijepolje
           </span>
           <span>
-            <span className="geo">GEO</span> <span className="monting">MONTING 033</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            Pon – Pet: 7:30 – 15:30
           </span>
+          <a href={`mailto:${CONTACT.email}`}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            {CONTACT.email}
+          </a>
         </div>
-        <nav>
-          <ul
-            style={
-              menuOpen
-                ? {
-                    display: "flex",
-                    flexDirection: "column",
-                    position: "fixed",
-                    top: 64,
-                    right: 20,
-                    background: "#fff",
-                    padding: "20px 26px",
-                    boxShadow: "0 10px 30px rgba(0,0,0,.15)",
-                    borderRadius: 4,
-                  }
-                : undefined
-            }
+      </div>
+      <div className="navbar">
+        <div className="wrap">
+          <a href="#pocetna" className="brand" onClick={close}>
+            <span className="mark">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-icon.png" alt="GEO MONTING 033 logo" width={36} height={36} />
+            </span>
+            <span className="brand-text">
+              <span className="brand-name">
+                <span className="geo">GEO</span> MONTING 033
+              </span>
+              <span className="brand-sub">Geodetske usluge · Prijepolje</span>
+            </span>
+          </a>
+          <nav id="mainNav" aria-label="Glavni meni">
+            <ul>
+              {links.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} onClick={close}>
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <a href={CONTACT.phoneMobile.href} className="nav-phone">
+            <span className="nav-phone-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h4l2 5-2.5 1.5a11 11 0 005 5L14 14l5 2v4a2 2 0 01-2 2A16 16 0 014 7a2 2 0 012-2z" />
+              </svg>
+            </span>
+            <span>
+              <small>Pozovite nas</small>
+              {CONTACT.phoneMobile.label}
+            </span>
+          </a>
+          <button
+            className="burger"
+            aria-label={menuOpen ? "Zatvori meni" : "Otvori meni"}
+            aria-expanded={menuOpen}
+            aria-controls="mainNav"
+            onClick={() => setMenuOpen((v) => !v)}
           >
-            <li>
-              <a href="#pocetna" onClick={() => setMenuOpen(false)}>
-                Početna
-              </a>
-            </li>
-            <li>
-              <a href="#usluge" onClick={() => setMenuOpen(false)}>
-                Usluge
-              </a>
-            </li>
-            <li>
-              <a href="#onama" onClick={() => setMenuOpen(false)}>
-                O nama
-              </a>
-            </li>
-            <li>
-              <a
-                href="#kontakt"
-                className="nav-cta"
-                style={menuOpen ? { display: "inline-flex" } : undefined}
-                onClick={() => setMenuOpen(false)}
-              >
-                Kontaktirajte nas
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          className="burger"
-          aria-label="Meni"
-          onClick={() => setMenuOpen((v) => !v)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
   );

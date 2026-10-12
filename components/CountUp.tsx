@@ -10,7 +10,8 @@ interface CountUpProps {
 }
 
 export default function CountUp({ end, suffix = "", start = 0, duration = 1400 }: CountUpProps) {
-  const [value, setValue] = useState(start);
+  // Početna vrednost je krajnji broj, da bi bez JavaScript-a (i za Google) stajao tačan podatak.
+  const [value, setValue] = useState(end);
   const ref = useRef<HTMLSpanElement>(null);
   const hasAnimated = useRef(false);
 

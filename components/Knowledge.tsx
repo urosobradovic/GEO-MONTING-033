@@ -2,7 +2,7 @@ const items = [
   {
     tag: "01",
     q: "Šta je geodetski elaborat?",
-    a: "Dokument koji sadrži sve podatke terenskog merenja — koordinate, skice i izračunavanja — a koji se predaje katastru radi upisa promena na parceli ili objektu.",
+    a: "Dokument koji sadrži sve podatke terenskog merenja: koordinate, skice i izračunavanja. Elaborat se predaje katastru radi upisa promena na parceli ili objektu.",
   },
   {
     tag: "02",
@@ -23,23 +23,29 @@ const items = [
 
 export default function Knowledge() {
   return (
-    <section className="knowledge">
+    <section className="knowledge" id="pitanja">
       <div className="wrap">
-        <div className="section-head">
-          <div className="eyebrow">Korisno da znate</div>
-          <h2>Osnovni pojmovi iz geodezije</h2>
-          <p>Kratka objašnjenja termina na koje ćete najčešće naići prilikom saradnje sa geodetskom strukom.</p>
-        </div>
-        <div className="faq-grid">
-          {items.map((it) => (
-            <div className="faq-item" key={it.tag}>
-              <h4>
-                <span className="tag">{it.tag}</span>
-                {it.q}
-              </h4>
-              <p>{it.a}</p>
-            </div>
-          ))}
+        <div className="knowledge-grid">
+          <div className="section-head">
+            <div className="eyebrow">Korisno da znate</div>
+            <h2>Osnovni pojmovi iz geodezije</h2>
+            <p>Kratka objašnjenja termina na koje ćete najčešće naići prilikom saradnje sa geodetskom strukom.</p>
+            <a href="#kontakt" className="btn btn-primary">
+              Imate drugo pitanje?
+            </a>
+          </div>
+          <div className="faq-list">
+            {items.map((it, i) => (
+              <details className="faq-item" key={it.tag} open={i === 0}>
+                <summary>
+                  <span className="tag">{it.tag}</span>
+                  {it.q}
+                  <span className="faq-toggle" aria-hidden="true"></span>
+                </summary>
+                <p>{it.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
     </section>

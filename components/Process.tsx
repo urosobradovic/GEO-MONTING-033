@@ -23,9 +23,9 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="process">
+    <section className="process" id="proces">
       <div className="wrap">
-        <div className="section-head">
+        <div className="section-head center">
           <div className="eyebrow">Kako radimo</div>
           <h2>Put od poziva do overenog elaborata</h2>
           <p>Isti redosled koraka, bez obzira da li je u pitanju mala parcela ili veći infrastrukturni projekat.</p>
@@ -33,8 +33,8 @@ export default function Process() {
         <div className="process-grid">
           {steps.map((s) => (
             <div className="p-step" key={s.n}>
-              <div className="p-num">{s.n}</div>
-              <h4>{s.title}</h4>
+              <div className="p-num">{String(s.n).padStart(2, "0")}</div>
+              <h3>{s.title}</h3>
               <p>{s.text}</p>
             </div>
           ))}

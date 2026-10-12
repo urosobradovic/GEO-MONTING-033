@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-const SITE_URL = "https://www.geomonting033.rs";
+import { COORDS, MAPS_URL, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -42,13 +41,13 @@ export const metadata: Metadata = {
     title: "GEO MONTING 033 — Geodeta Prijepolje | Geodetske usluge i katastar",
     description:
       "Geodetska firma iz Prijepolja sa više od 20 godina iskustva: obeležavanje parcela, geodetski elaborati, katastarsko-topografski planovi.",
-    images: ["/logo-full.png"],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Leica totalna stanica na terenu — GEO MONTING 033" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO MONTING 033 — Geodeta Prijepolje",
     description: "Geodetske usluge u Prijepolju: deoba parcela, obeležavanje, katastarsko-topografski plan.",
-    images: ["/logo-full.png"],
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -56,7 +55,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "GEO MONTING 033",
-  image: `${SITE_URL}/logo-full.png`,
+  url: SITE_URL,
+  image: `${SITE_URL}/og-image.jpg`,
+  logo: `${SITE_URL}/logo-full.png`,
   description:
     "Geodetska firma iz Prijepolja sa više od 20 godina iskustva u geodetskim uslugama: deoba parcela, obeležavanje, katastarsko-topografski planovi, geodetski elaborati.",
   address: {
@@ -68,8 +69,8 @@ const jsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 43.38548,
-    longitude: 19.641992,
+    latitude: COORDS.lat,
+    longitude: COORDS.lng,
   },
   telephone: "+381641918040",
   email: "daliborobradovic@yahoo.com",
@@ -83,7 +84,8 @@ const jsonLd = {
       closes: "15:30",
     },
   ],
-  sameAs: [],
+  hasMap: MAPS_URL,
+  sameAs: [MAPS_URL, "https://geomonting033.wordpress.com/"],
 };
 
 export default function RootLayout({
@@ -92,8 +94,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sr">
+    <html lang="sr-Latn">
       <head>
+        <link rel="preload" as="image" href="/hero.jpg" fetchPriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

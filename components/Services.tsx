@@ -96,21 +96,26 @@ export default function Services() {
   return (
     <section className="services" id="usluge">
       <div className="wrap">
-        <div className="section-head">
-          <div className="eyebrow">Naše usluge</div>
-          <h2>Kompletna geodetska podrška — od parcele do katastra</h2>
+        <div className="section-head split">
+          <div>
+            <div className="eyebrow">Naše usluge</div>
+            <h2>Kompletna geodetska podrška — od parcele do katastra</h2>
+          </div>
           <p>
-            Devet oblasti rada koje pokrivaju najveći deo potreba fizičkih i pravnih lica u geodeziji i
-            inženjerstvu.
+            Radimo za fizička lica, investitore, izvođače i javni sektor na teritoriji Prijepolja i šire. Niste
+            sigurni koja vam usluga treba? <a href="#kontakt">Pozovite nas</a> i posavetovaćemo vas.
           </p>
         </div>
         <div className="service-grid">
-          {services.map((s) => (
-            <div className="service-item" key={s.title}>
-              <div className="s-icon">{s.icon}</div>
-              <h4>{s.title}</h4>
+          {services.map((s, i) => (
+            <article className="service-item" key={s.title}>
+              <div className="s-top">
+                <div className="s-icon">{s.icon}</div>
+                <span className="s-num">{String(i + 1).padStart(2, "0")}</span>
+              </div>
+              <h3>{s.title}</h3>
               <p>{s.text}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Statički export (folder `out/`) — hostuje se na Cloudflare Pages bez servera.
+  output: "export",
+  trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "geomonting033.wordpress.com",
-      },
-    ],
+    unoptimized: true,
   },
 };
 

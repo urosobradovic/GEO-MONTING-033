@@ -26,7 +26,8 @@ npm run start
 - `app/globals.css` — sav CSS (boje, tipografija, layout)
 - `components/` — svaka sekcija je posebna komponenta
 - `public/logo-icon.png` — ikonica loga (header, footer, favicon)
-- `public/logo-full.png` — pun logo (ikonica + tekst), koristi se za Open Graph/deljenje linkova
+- `public/logo-full.png` — pun logo (ikonica + tekst), koristi se kao logo u JSON-LD
+- `public/og-image.jpg` — slika koja se prikazuje kad se link podeli (Facebook, Viber, WhatsApp...)
 - `public/o-nama.jpg` — tvoja terenska fotografija (Leica total stanica), prikazana u "O nama" sekciji
 
 ## Kako da sajt "iskače" na Google-u za geodeziju (SEO)
@@ -43,13 +44,43 @@ Već je podešeno u kodu, ali evo šta radi šta i šta možeš dodatno da uradi
 
 4. **`sitemap.xml` i `robots.txt`** — automatski se generišu na `/sitemap.xml` i `/robots.txt`. Kada objaviš sajt na pravom domenu, prijavi sitemap link u Google Search Console da Google brže indeksira stranicu.
 
-5. **Zameni `https://www.geomonting033.rs`** — ovo je privremeni/placeholder domen ubačen u `app/layout.tsx`, `app/sitemap.ts` i `app/robots.ts`. Čim registruješ pravi domen, zameni ga svuda (traži `geomonting033.rs` kroz projekat).
+5. **Domen** — adresa sajta se podešava jednim mestom: env promenljiva `NEXT_PUBLIC_SITE_URL` (podrazumevano `https://www.geomonting033.rs`, vidi `lib/site.ts`).
 
 6. **Alt tekst na slikama** — svaka slika već ima opisan `alt` tekst sa ključnim rečima (npr. "Leica totalna stanica na terenu — geodetsko snimanje..."), što takođe pomaže Google Images pretrazi.
 
-## Objavljivanje (deploy)
+## Objavljivanje na Cloudflare Pages
 
-Najjednostavnije je preko [Vercel](https://vercel.com) — poveži GitHub repo i sajt se automatski builduje i objavljuje pri svakom push-u. Alternativa: bilo koji hosting koji podržava Node.js (`npm run build` pa `npm run start`).
+Sajt se builduje kao **statički sajt** (`output: "export"` u `next.config.mjs`) u folder `out/`, pa mu ne treba server.
+
+**Preko GitHub-a (preporučeno — svaki push automatski objavljuje novu verziju):**
+
+1. Push-uj projekat na GitHub.
+2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → izaberi repo.
+3. Podešavanja builda:
+   - Framework preset: **Next.js (Static HTML Export)**
+   - Build command: `npm run build`
+   - Build output directory: `out`
+   - Environment variable: `NEXT_PUBLIC_SITE_URL` = pravi domen (npr. `https://www.geomonting033.rs`) — koristi se za sitemap, robots i Open Graph
+4. **Save and Deploy.** Sajt će biti na `https://geomonting033.pages.dev`, a pod **Custom domains** možeš dodati svoj domen.
+
+**Ako je Cloudflare napravio Worker projekat** (deploy komanda `npx wrangler deploy`): Build command `npm run build`, Deploy command `npx wrangler deploy`. Sve ostalo je podešeno u `wrangler.toml`.
+
+Node verzija je zadata u `.node-version` (20).
+
+**Ručno, iz terminala (Wrangler):**
+
+```bash
+npm run build
+npx wrangler pages deploy out
+```
+
+`public/_headers` podešava keširanje slika i osnovna sigurnosna zaglavlja na Cloudflare-u.
+
+## Slike
+
+- `hero.jpg`, `profesionalnost.jpg`, `ekspresnost.jpg`, `og-image.jpg` — fotografije sa starog sajta geomonting033.wordpress.com
+- `o-nama.jpg` — vaša terenska fotografija (Leica TS10)
+- `iskustvo.jpg` — vaša terenska fotografija (Leica, put u magli)
 
 ## Napomena o fontovima
 
