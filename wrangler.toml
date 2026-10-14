@@ -1,6 +1,6 @@
 # Cloudflare Workers (statički sajt). Build: `npm run build`, deploy: `npx wrangler deploy`.
 # Za Cloudflare Pages ovaj fajl se ignoriše — tamo je Build output directory: `out`.
-name = "geomonting033"
+name = "geo-monting-033"
 compatibility_date = "2025-09-01"
 
 [assets]
