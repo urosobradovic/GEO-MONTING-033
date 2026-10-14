@@ -306,14 +306,17 @@ header.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45
 .quotes{padding:120px 0;background:var(--gray-50);border-bottom:1px solid var(--gray-200);}
 .quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
 .quote-card{
-  position:relative;background:var(--white);padding:44px 44px 36px;border-radius:var(--radius);
-  border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);
+  position:relative;background:var(--white);padding:40px 40px 36px;border-radius:var(--radius);
+  border:1px solid var(--gray-200);border-top:3px solid var(--red);box-shadow:var(--shadow-sm);
+  transition:box-shadow .3s ease, transform .3s ease;
 }
-.quote-mark{width:44px;height:44px;fill:var(--red);opacity:.9;margin-bottom:18px;}
-.quote-card blockquote{font-size:1.14rem;line-height:1.6;color:var(--charcoal);font-family:var(--font-display);font-weight:500;}
-.quote-card figcaption{margin-top:28px;padding-top:20px;border-top:1px solid var(--gray-200);display:flex;flex-direction:column;}
-.quote-card figcaption b{font-family:var(--font-display);color:var(--black);}
-.quote-card figcaption span{font-family:var(--font-mono);font-size:.72rem;color:var(--gray-500);text-transform:uppercase;letter-spacing:.1em;margin-top:2px;}
+.quote-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.partner-top{display:flex;align-items:center;gap:18px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--gray-200);}
+.partner-icon{flex:none;width:56px;height:56px;border-radius:50%;background:var(--red-soft);display:grid;place-items:center;}
+.partner-icon svg{width:26px;height:26px;fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.partner-label{display:block;font-family:var(--font-mono);font-size:.72rem;color:var(--gray-500);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;}
+.quote-card h3{font-family:var(--font-display);font-size:1.25rem;color:var(--black);}
+.quote-card p{font-size:1.02rem;line-height:1.7;color:var(--gray-600);}
 
 /* ---------- KNOWLEDGE / FAQ ---------- */
 .knowledge{padding:120px 0;}

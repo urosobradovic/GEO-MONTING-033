@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="hero-grid" aria-hidden="true"></div>
       <div className="wrap">
         <div className="hero-inner">
-          <div className="coord">N 43.385626° · E 19.642456° — Prijepolje, Srbija</div>
+          <div className="coord">N 43.385626° · E 19.642456° · Prijepolje, Srbija</div>
           <h1>
             Precizna geodezija <span>za vašu parcelu i projekat</span>
           </h1>

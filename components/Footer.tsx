@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p>
-              Geodetska firma iz Prijepolja sa više od 20 godina iskustva — deoba i obeležavanje parcela,
+              Geodetska firma iz Prijepolja sa više od 20 godina iskustva: deoba i obeležavanje parcela,
               katastarsko-topografski planovi, geodetski elaborati i inženjerska geodezija.
             </p>
           </div>
@@ -42,15 +42,15 @@ export default function Footer() {
           <div>
             <h4>Radno vreme</h4>
             <ul>
-              <li>Ponedeljak – Petak</li>
-              <li className="f-strong">7:30 – 15:30</li>
+              <li>Ponedeljak do petka</li>
+              <li className="f-strong">od 7:30 do 15:30</li>
               <li>Subota i nedelja</li>
               <li className="f-strong">Zatvoreno</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {year} GEO MONTING 033 d.o.o. — Prijepolje, Srbija</span>
+          <span>© {year} GEO MONTING 033 d.o.o. · Prijepolje, Srbija</span>
         </div>
       </div>
     </footer>

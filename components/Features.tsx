@@ -1,15 +1,15 @@
 const features = [
   {
     img: "/iskustvo.jpg",
-    alt: "Leica totalna stanica pored puta u magli — terensko merenje, GEO MONTING 033",
+    alt: "Leica totalna stanica pored puta u magli, terensko merenje, GEO MONTING 033",
     title: "Iskustvo",
     text: "Poslujemo na teritoriji Opštine Prijepolje, a i šire, već više od 20 godina.",
   },
   {
     img: "/profesionalnost-gnss.jpg",
-    alt: "Geodeta sa Leica GNSS prijemnikom i kontrolerom tokom merenja",
+    alt: "Geometar sa Leica GNSS prijemnikom i kontrolerom tokom merenja",
     title: "Profesionalnost",
-    text: "Prilikom poslovanja sa nama, svaka reč iz dogovora se ispoštuje — uključujući dogovor u kancelariji kao i izlazak na teren.",
+    text: "Prilikom poslovanja sa nama, svaka reč iz dogovora se ispoštuje, uključujući dogovor u kancelariji kao i izlazak na teren.",
   },
   {
     img: "/ekspresnost.jpg",

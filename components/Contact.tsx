@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="section-head center">
           <div className="eyebrow">Kontakt</div>
           <h2>Posetite našu kancelariju u Prijepolju</h2>
-          <p>Za svaku nedoumicu ili pitanje stojimo na raspolaganju — pozovite nas, pišite nam ili svratite.</p>
+          <p>Za svaku nedoumicu ili pitanje stojimo na raspolaganju. Pozovite nas, pišite nam ili svratite.</p>
         </div>
 
         <div className="contact-cards">
@@ -61,7 +61,7 @@ export default function Contact() {
               </tbody>
             </table>
             <p className="hours-tip">
-              Za terenska merenja preporučujemo najavu bar dan unapred, posebno u periodu proleće–jesen. Za hitne
+              Za terenska merenja preporučujemo najavu bar dan unapred, posebno u periodu od proleća do jeseni. Za hitne
               slučajeve pozovite nas telefonom.
             </p>
           </div>

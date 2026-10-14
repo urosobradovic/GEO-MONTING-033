@@ -5,12 +5,13 @@ import { COORDS, MAPS_URL, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "GEO MONTING 033 — Geodeta Prijepolje | Geodetske usluge, obeležavanje parcela, katastar",
+    default: "GEO MONTING 033 | Geometar Prijepolje, geodetske usluge i katastar",
     template: "%s | GEO MONTING 033",
   },
   description:
-    "GEO MONTING 033 — geodetska firma iz Prijepolja sa više od 20 godina iskustva. Deoba i obeležavanje parcela, katastarsko-topografski plan, geodetski elaborat, obnova međa, profili puteva. Pozovite geodetu u Prijepolju.",
+    "GEO MONTING 033, geodetska firma iz Prijepolja sa više od 20 godina iskustva. Deoba i obeležavanje parcela, katastarsko-topografski plan, geodetski elaborat, obnova međa, profili puteva. Pozovite geometra u Prijepolju.",
   keywords: [
+    "geometar Prijepolje",
     "geodeta Prijepolje",
     "geodetske usluge Prijepolje",
     "geodetski biro Prijepolje",
@@ -38,14 +39,14 @@ export const metadata: Metadata = {
     locale: "sr_RS",
     url: SITE_URL,
     siteName: "GEO MONTING 033",
-    title: "GEO MONTING 033 — Geodeta Prijepolje | Geodetske usluge i katastar",
+    title: "GEO MONTING 033 | Geometar Prijepolje, geodetske usluge i katastar",
     description:
       "Geodetska firma iz Prijepolja sa više od 20 godina iskustva: obeležavanje parcela, geodetski elaborati, katastarsko-topografski planovi.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Leica totalna stanica na terenu — GEO MONTING 033" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Leica totalna stanica na terenu, GEO MONTING 033" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO MONTING 033 — Geodeta Prijepolje",
+    title: "GEO MONTING 033 | Geometar Prijepolje",
     description: "Geodetske usluge u Prijepolju: deoba parcela, obeležavanje, katastarsko-topografski plan.",
     images: ["/og-image.jpg"],
   },

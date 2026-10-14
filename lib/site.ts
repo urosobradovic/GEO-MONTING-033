@@ -16,11 +16,11 @@ export const CONTACT = {
 };
 
 export const HOURS = [
-  { day: "Ponedeljak", time: "7:30 – 15:30" },
-  { day: "Utorak", time: "7:30 – 15:30" },
-  { day: "Sreda", time: "7:30 – 15:30" },
-  { day: "Četvrtak", time: "7:30 – 15:30" },
-  { day: "Petak", time: "7:30 – 15:30" },
+  { day: "Ponedeljak", time: "7:30 do 15:30" },
+  { day: "Utorak", time: "7:30 do 15:30" },
+  { day: "Sreda", time: "7:30 do 15:30" },
+  { day: "Četvrtak", time: "7:30 do 15:30" },
+  { day: "Petak", time: "7:30 do 15:30" },
   { day: "Subota", time: "Zatvoreno", closed: true },
   { day: "Nedelja", time: "Zatvoreno", closed: true },
 ];

@@ -99,7 +99,7 @@ export default function Services() {
         <div className="section-head split">
           <div>
             <div className="eyebrow">Naše usluge</div>
-            <h2>Kompletna geodetska podrška — od parcele do katastra</h2>
+            <h2>Kompletna geodetska podrška, od parcele do katastra</h2>
           </div>
           <p>
             Radimo za fizička lica, investitore, izvođače i javni sektor na teritoriji Prijepolja i šire. Niste

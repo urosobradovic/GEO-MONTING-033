@@ -13,7 +13,7 @@ export default function Stats() {
           </div>
           <div className="stat">
             <b>
-              <CountUp end={9} start={3} duration={2000} />
+              <CountUp end={9} suffix="+" start={3} duration={2000} />
             </b>
             <span>Vrsta geodetskih usluga</span>
           </div>

@@ -8,7 +8,7 @@ export default function About() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/o-nama.jpg"
-                alt="Leica totalna stanica na terenu — geodetsko snimanje, GEO MONTING 033 Prijepolje"
+                alt="Leica totalna stanica na terenu, geodetsko snimanje, GEO MONTING 033 Prijepolje"
                 loading="lazy"
                 width={1000}
                 height={1333}
