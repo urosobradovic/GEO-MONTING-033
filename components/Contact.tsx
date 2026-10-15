@@ -60,10 +60,6 @@ export default function Contact() {
                 ))}
               </tbody>
             </table>
-            <p className="hours-tip">
-              Za terenska merenja preporučujemo najavu bar dan unapred, posebno u periodu od proleća do jeseni. Za hitne
-              slučajeve pozovite nas telefonom.
-            </p>
           </div>
           <div className="map-frame">
             <iframe

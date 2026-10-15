@@ -9,7 +9,7 @@ export const COORDS = { lat: 43.385626, lng: 19.642456 };
 
 export const CONTACT = {
   phoneMobile: { label: "064 191 80 40", href: "tel:+381641918040" },
-  phoneLandline: { label: "033 716 240", href: "tel:+38133716240" },
+  phoneLandline: { label: "+381 33 716 240", href: "tel:+38133716240" },
   email: "daliborobradovic@yahoo.com",
   address: "Vladimira Perića Valtera 116",
   city: "31300 Prijepolje, Srbija",
