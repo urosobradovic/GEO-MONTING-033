@@ -11,7 +11,6 @@ const TARGETS = [
   ".service-item",
   ".feature-card",
   ".p-step",
-  ".quote-card",
   ".faq-item",
   ".contact-card",
   ".hours-card",

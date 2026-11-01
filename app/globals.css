@@ -301,21 +301,6 @@ header.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45
 .p-step h3{font-size:1.1rem;margin-bottom:10px;}
 .p-step p{font-size:.92rem;color:var(--gray-300);}
 
-/* ---------- QUOTES ---------- */
-.quotes{padding:120px 0;background:var(--gray-50);border-bottom:1px solid var(--gray-200);}
-.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
-.quote-card{
-  position:relative;background:var(--white);padding:40px 40px 36px;border-radius:var(--radius);
-  border:1px solid var(--gray-200);border-top:3px solid var(--red);box-shadow:var(--shadow-sm);
-  transition:box-shadow .3s ease, transform .3s ease;
-}
-.quote-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
-.partner-top{display:flex;align-items:center;gap:18px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--gray-200);}
-.partner-icon{flex:none;width:56px;height:56px;border-radius:50%;background:var(--red-soft);display:grid;place-items:center;}
-.partner-icon svg{width:26px;height:26px;fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
-.partner-label{display:block;font-family:var(--font-mono);font-size:.72rem;color:var(--gray-500);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;}
-.quote-card h3{font-family:var(--font-display);font-size:1.25rem;color:var(--black);}
-.quote-card p{font-size:1.02rem;line-height:1.7;color:var(--gray-600);}
 
 /* ---------- KNOWLEDGE / FAQ ---------- */
 .knowledge{padding:120px 0;}
@@ -409,7 +394,7 @@ footer a:hover{color:var(--white);}
   header.menu-open nav a::after{display:none;}
   .hero{padding:130px 0 130px;}
   .section-head.split{grid-template-columns:1fr;gap:16px;}
-  .about-grid, .knowledge-grid, .contact-grid, .quote-grid{grid-template-columns:1fr;gap:56px;}
+  .about-grid, .knowledge-grid, .contact-grid{grid-template-columns:1fr;gap:56px;}
   .about-art{max-width:520px;}
   .knowledge .section-head{position:static;}
   .service-grid, .feature-grid{grid-template-columns:1fr 1fr;}
@@ -419,7 +404,7 @@ footer a:hover{color:var(--white);}
 }
 @media (max-width:600px){
   .wrap{padding:0 18px;}
-  .about, .services, .features, .process, .quotes, .knowledge, .contact{padding:84px 0;}
+  .about, .services, .features, .process, .knowledge, .contact{padding:84px 0;}
   .section-head{margin-bottom:40px;}
   .stats{margin-top:-50px;}
   .stats-card{grid-template-columns:1fr;}
@@ -433,7 +418,6 @@ footer a:hover{color:var(--white);}
   .about-art{padding:0 0 24px 24px;}
   .about-art::after{display:none;}
   .faq-item p{padding-left:24px;}
-  .quote-card{padding:32px 26px 28px;}
   .brand-sub{display:none;}
 }
 /* Telefon: slika gore cela vidljiva (instrument + geometar), tekst ispod na tamnoj podlozi */

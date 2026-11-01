@@ -3,7 +3,7 @@ const features = [
     img: "/iskustvo.jpg",
     alt: "Leica totalna stanica pored puta u magli, terensko merenje, GEO MONTING 033",
     title: "Iskustvo",
-    text: "Poslujemo na teritoriji Opštine Prijepolje, a i šire, već više od 20 godina.",
+    text: "Poslujemo u Prijepolju i šire već više od 20 godina.",
   },
   {
     img: "/profesionalnost-gnss.jpg",

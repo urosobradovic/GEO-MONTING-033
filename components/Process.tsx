@@ -7,7 +7,7 @@ const steps = [
   {
     n: 2,
     title: "Terensko merenje",
-    text: "GNSS/RTK prijem i robotska totalna stanica beleže tačke sa centimetarskom preciznošću.",
+    text: "GNSS/RTK prijem i totalna stanica beleže tačke sa centimetarskom preciznošću.",
   },
   {
     n: 3,
