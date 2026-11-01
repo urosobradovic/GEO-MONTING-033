@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     title: "GEO MONTING 033 | Geometar Prijepolje, geodetske usluge i katastar",
     description:
       "Geodetska firma iz Prijepolja sa više od 20 godina iskustva: obeležavanje parcela, geodetski elaborati, katastarsko-topografski planovi.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Leica totalna stanica na terenu, GEO MONTING 033" }],
+    images: [{ url: "/og-logo.png", width: 1200, height: 630, alt: "GEO MONTING 033 logo" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO MONTING 033 | Geometar Prijepolje",
     description: "Geodetske usluge u Prijepolju: deoba parcela, obeležavanje, katastarsko-topografski plan.",
-    images: ["/og-image.jpg"],
+    images: ["/og-logo.png"],
   },
 };
 

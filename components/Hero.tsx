@@ -16,7 +16,7 @@ export default function Hero() {
           </h1>
           <p className="tagline">
             <strong>GEO MONTING 033</strong> je geodetska firma iz Prijepolja. Već više od dve decenije radimo
-            deobu i obeležavanje parcela, katastarsko-topografske planove i elaborate za fizička lica i firme.
+            deobu i obeležavanje parcela, katastarsko-topografske planove i elaborate za fizička i pravna lica, kao i za javni sektor.
           </p>
           <div className="btn-row">
             <a href={CONTACT.phoneMobile.href} className="btn btn-primary">
